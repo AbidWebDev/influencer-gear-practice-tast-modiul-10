@@ -1,0 +1,338 @@
+
+/* navber style */
+
+.navber{
+    display: flex;
+    justify-content: space-between;
+    margin: 57px 120px;
+}
+
+.nav-taitel{
+    width: 243px;
+    height: 52px;
+    font-size: 1.5rem;
+}
+.nav-icone{ 
+    display: flex;
+    justify-content: space-around;
+    width: 463px;
+    height: 38px;
+
+  
+}
+.nav-item{
+     margin-left: 34px;
+     list-style: none;
+}
+
+.nav-icone a{
+    text-decoration: none;
+    color: #3A3A3A;
+      font-size: 1rem;
+    font-weight: 500;
+
+}
+
+.navber img{
+ height: 2%;
+ width: 2%;
+}
+
+/* header style */
+
+.benner{
+    display: flex;
+    margin: 0 auto;
+    justify-content: center;
+   align-items: center;
+}
+
+.benner-containar{
+    width: 582px;
+    height: 270px;
+}
+
+.benner-titel{
+    width: 562px;
+    height: 133px;
+    font-size: 3.25rem;
+    font-weight: bold;
+    margin-bottom: 18px;
+}
+
+.benner-description{
+    height: 61px;
+    width: 505px;
+    font-weight: 500;
+    font-size: 1rem;
+    margin-bottom: 16px;
+}
+
+.benner-btn{
+    height: 44px;
+    width: 186px;
+    background-color: #E02C6D;
+    color: white;
+    border-radius: 41px;
+    border: none;
+}
+
+.benner-img img{
+    height: 414px;
+    width: 440px;
+     background-image: url(images/Circle\ design.svg);
+    background-size: 100%;
+}
+
+/* brand logo styles */
+
+.brend-img{
+    max-width: 1110px;
+    margin: 100px auto;
+}
+
+.brend-logo{
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+}
+
+/* card section */
+
+.card-section-head{
+    /* margin: 50px auto; */
+    justify-content: center;
+    text-align: center;
+    font-weight: 500;
+    font-size: 1.75rem;
+}
+
+.cards{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    margin-left: 132px;
+    margin-right: 196px;
+    gap: 30px;
+}
+
+.card{
+    width: 300px;
+    height: 450px;
+    justify-content: start;
+    padding: 15px 13px ;
+    border: 1px solid white;
+    box-shadow: 10px 10px 10px 10px #AAAAAA;
+    border-radius: 10px;
+}
+
+.card img{
+    height: 258px;
+    width: 100%;
+   
+}
+
+.product-name{
+    font-size: 1.75rem;
+    font-weight: 600;
+    color: #18191F;
+    margin-top: 16px;
+}
+
+.product-price{
+    font-size: 1.5rem;
+    color: #000000;
+    margin-top: 0px;
+}
+
+.product-description{
+    font-weight: bold;
+    color: #787885;
+    margin-top: -20px ;
+}
+
+#see-more{
+    text-align: right;
+    color: #E02C6D;
+    font-size: 1.25rem;
+    font-weight: 600;
+    margin-top: 50px;
+}
+
+/* featured-section */
+
+.featured-section{
+    display: flex;
+    margin: 100px 165px;
+    gap: 96px;
+}
+
+.featured-section img{
+    width: 404px;
+    height: 270px;
+}
+
+
+/* .feature-conainar{
+    width: 610px;
+    height: 270px;
+} */
+
+.feature-taitel{
+    font-size: 2.375rem;
+    font-weight: 700;
+    color: #0A0826 ;
+}
+
+.feature-description{
+    height: 88px;
+    width: 400px;
+    color: #6C6C6C;
+    font-weight: bold;
+    font-size: 1rem;
+}
+
+.feature-btn{
+    width: 155px;
+    height: 44px;
+    background-color: #E02C6D;
+    color: white;
+    border: none;
+    margin-top: -16px;
+    border-radius: 5px;
+}
+
+.footer{
+    background-color: #0A0826;
+    max-width: 1440px;
+    width: 100%;
+    height: 240px;
+    color: white;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+
+.footer-containar{
+    margin-top: 50px;
+    height: 140px;
+    width: 262px;
+}
+
+.footer-containar img{
+    filter: grayscale(100%);
+    width: 8%;
+    height: 12%;
+}
+
+
+
+
+.hide{
+    display: none;
+}
+
+@media screen and (max-width:576px) {
+
+    .navber{
+        flex-direction: column;
+    }
+    .nav-icone{
+        flex-direction: column;
+        font-size: 1.2rem;
+        justify-content: start;
+        
+
+    }
+
+    .benner{
+        flex-direction: column;
+        flex-direction: column-reverse;
+    }
+
+    .benner-containar{
+        width: 400px;
+        justify-content: center;
+        text-align: center;
+        margin: 0;
+    }
+    .benner-titel{
+       width: 90%;
+       height: 70px;
+       font-size: 2.50rem;
+       /* justify-content: center;
+       text-align: center; */
+       margin: 0 auto;
+       
+
+    }
+    .benner-description{
+        margin:50px auto;
+        width: 90%;
+        height: 50px;
+
+    }
+    .benner-img img{
+        width: 90%;
+        margin: 50px auto;
+    }
+
+    .brend-logo{
+        grid-template-columns: repeat(1, 1fr);
+        row-gap: 40px;
+       
+    }
+    .brend-img{
+        justify-items: center;
+        margin: 50px auto;
+        
+    }
+
+    .cards{
+        grid-template-columns: repeat(1, 1fr);
+        margin: 0 auto;
+        justify-items: center;
+    }
+
+    .featured-section{
+        flex-direction: column;
+        flex-direction: column-reverse;
+        margin: 0 auto;
+        text-align: center;
+    }
+    
+}
+
+@media screen and (min-width:577px) and (max-width:992px) {
+    .navber{
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .benner{
+        flex-direction: column;
+        flex-direction: column-reverse;
+    }
+    .benner-containar{
+        margin-top: 50px;
+    }
+
+    .brend-logo{
+        grid-template-columns: repeat(4, 1fr);
+        justify-items: center;
+        row-gap: 40px;
+    }
+
+    .cards{
+        grid-template-columns: repeat(2, 1fr);
+        margin: 0 auto;
+        justify-items: center;
+    }
+
+    .featured-section {
+        flex-direction: column;
+        text-align: center;
+        justify-items: center;
+       
+    }
+
+}
